@@ -1,0 +1,79 @@
+<h3 class="ui header">{{t "forms.i-i-s-product-64396-speaker-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.lastName
+      class=(if (v-get validationObject "lastName" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-64396-speaker-e.lastName-caption")
+      data-test-i-i-s-product-64396-speaker-e-lastName=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "lastName" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.firstName
+      class=(if (v-get validationObject "firstName" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-64396-speaker-e.firstName-caption")
+      data-test-i-i-s-product-64396-speaker-e-firstName=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "firstName" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.middleName
+      class=(if (v-get validationObject "middleName" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-64396-speaker-e.middleName-caption")
+      data-test-i-i-s-product-64396-speaker-e-middleName=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "middleName" "message")}}
+  </div>
+
+  {{#if model.authorReports}}
+  <div style="padding: 30px 0px;">
+    <h3>List of Reports:</h3>
+  </div>
+{{/if}}
+{{#unless model.isNew}}
+  <div class="field" >
+    <ul style="display: inline-block; list-style-type: none;  margin: 0;  padding: 0;">
+      {{#each model.authorReports as |report|}}
+      <li style=
+        "border-radius: 0.29rem;
+        border: 1px solid rgba(34, 36, 38, 0.15);
+        padding: 5px;
+        margin: 10px;
+        box-shadow: 0px 1px 2px 0 rgb(34 36 38 / 15%)">
+        <a href={{report}}>{{report}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+{{/unless}}
+</form>

@@ -1,0 +1,33 @@
+{{flexberry-error error=error}}
+<h3>{{t "forms.i-i-s-product-64396-club-meeting-l.caption"}}</h3>
+<div class="row">
+  {{flexberry-objectlistview
+    modelName=modelName
+    modelProjection=modelProjection
+    editFormRoute=editFormRoute
+    enableFilters=true
+    filters=filters
+    applyFilters=(action "applyFilters")
+    resetFilters=(action "resetFilters")
+    content=model
+    createNewButton=true
+    refreshButton=true
+    sorting=computedSorting
+    orderable=true
+    showCheckBoxInRow=true
+    sortByColumn=(action "sortByColumn")
+    addColumnToSorting=(action "addColumnToSorting")
+    beforeDeleteAllRecords=(action "beforeDeleteAllRecords")
+    pages=pages
+    deleteButton=true
+    perPageValue=perPageValue
+    perPageValues=perPageValues
+    recordsTotalCount=recordsTotalCount
+    hasPreviousPage=hasPreviousPage
+    hasNextPage=hasNextPage
+    previousPage=(action "previousPage")
+    gotoPage=(action "gotoPage")
+    nextPage=(action "nextPage")
+    componentName="IISProduct_64396ClubMeetingL"
+  }}
+</div>

@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Books club",
+  "applicationTitle": "Product_64396",
+  "items": [
+    {
+      "link": null,
+      "menuName": "books-club",
+      "caption": "Books club",
+      "title": "Books club",
+      "children": [
+        {
+          "link": "i-i-s-product-64396-book-l",
+          "menuName": null,
+          "caption": "Book",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-product-64396-club-meeting-l",
+          "menuName": null,
+          "caption": "Club meeting",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-product-64396-speaker-l",
+          "menuName": null,
+          "caption": "Speaker",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

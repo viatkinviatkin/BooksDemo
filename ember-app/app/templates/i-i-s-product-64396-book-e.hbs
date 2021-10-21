@@ -1,0 +1,126 @@
+<h3 class="ui header">{{t "forms.i-i-s-product-64396-book-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.title
+      class=(if (v-get validationObject "title" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-64396-book-e.title-caption")
+      data-test-i-i-s-product-64396-book-e-title=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "title" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.author
+      class=(if (v-get validationObject "author" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-64396-book-e.author-caption")
+      data-test-i-i-s-product-64396-book-e-author=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "author" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.pagesCount
+      class=(if (v-get validationObject "pagesCount" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-64396-book-e.pagesCount-caption")
+      data-test-i-i-s-product-64396-book-e-pagesCount=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "pagesCount" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-product-64396-book-e.urlCover-caption"}}</label>
+    {{flexberry-file
+      readonly=readonly
+      value=model.urlCover
+      class=(if (v-get validationObject "urlCover" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-64396-book-e.urlCover-caption")
+      data-test-i-i-s-product-64396-book-e-urlCover=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "urlCover" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.urlDescription
+      class=(if (v-get validationObject "urlDescription" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-64396-book-e.urlDescription-caption")
+      data-test-i-i-s-product-64396-book-e-urlDescription=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "urlDescription" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.tags
+      class=(if (v-get validationObject "tags" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-64396-book-e.tags-caption")
+      data-test-i-i-s-product-64396-book-e-tags=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "tags" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.averageCount
+      class=(if (v-get validationObject "averageRating" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-64396-book-e.averageRating-caption")
+      data-test-i-i-s-product-64396-book-e-averageRating=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "averageRating" "message")}}
+  </div>
+
+
+  {{#if model.bookReports}}
+  <div style="padding: 30px 0px;">
+    {{!-- <h3>{{t "models.i-i-s-product-64396-report.projections.ReportE.urlVideo.__caption__"}}</h3> --}}
+    <h3>List of reports:</h3>
+  </div>
+{{/if}}
+ {{#unless model.isNew}} 
+  <div class="ember-text-field" >
+    <ul style="display: inline-block; list-style-type: none;  margin: 0;  padding: 0;">
+      {{#each model.bookReports as |report|}}
+      
+      <li style=
+        "border-radius: 0.29rem;
+        border: 1px solid rgba(34, 36, 38, 0.15);
+        padding: 5px;
+        margin: 10px;
+        box-shadow: 0px 1px 2px 0 rgb(34 36 38 / 15%)">
+        <a style="color:darkmagenta" href={{report}}>{{report}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+{{/unless}}
+ 
+
+
+</form>
