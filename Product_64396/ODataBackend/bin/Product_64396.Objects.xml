@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Product_64396.Objects</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.Product_64396.Book">
+            <summary>
+            Book.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Book.Title">
+            <summary>
+            Title.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Book.Author">
+            <summary>
+            Author.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Book.PagesCount">
+            <summary>
+            PagesCount.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Book.UrlCover">
+            <summary>
+            UrlCover.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Book.UrlDescription">
+            <summary>
+            UrlDescription.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Book.Tags">
+            <summary>
+            Tags.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Book.AverageRating">
+            <summary>
+            AverageRating.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_64396.Book.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Book.Views.BookE">
+            <summary>
+            "BookE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Book.Views.BookL">
+            <summary>
+            "BookL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_64396.ClubMeeting">
+            <summary>
+            Club meeting.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.ClubMeeting.MeetingDate">
+            <summary>
+            MeetingDate.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.ClubMeeting.BtBook">
+            <summary>
+            Club meeting.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.ClubMeeting.Report">
+            <summary>
+            Club meeting.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_64396.ClubMeeting.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.ClubMeeting.Views.ClubMeetingE">
+            <summary>
+            "ClubMeetingE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.ClubMeeting.Views.ClubMeetingL">
+            <summary>
+            "ClubMeetingL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_64396.BtBook">
+            <summary>
+            Bt book.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.BtBook.Book">
+            <summary>
+            Bt book.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_64396.BtBook.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.BtBook.Views.BtBookE">
+            <summary>
+            "BtBookE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.BtBook.Views.BtBookL">
+            <summary>
+            "BtBookL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_64396.Speaker">
+            <summary>
+            Speaker.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Speaker.LastName">
+            <summary>
+            LastName.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Speaker.FirstName">
+            <summary>
+            FirstName.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Speaker.MiddleName">
+            <summary>
+            MiddleName.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_64396.Speaker.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Speaker.Views.SpeakerE">
+            <summary>
+            "SpeakerE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Speaker.Views.SpeakerL">
+            <summary>
+            "SpeakerL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_64396.Report">
+            <summary>
+            Report.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Report.ReportDate">
+            <summary>
+            ReportDate.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Report.BookRating">
+            <summary>
+            BookRating.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Report.UrlPresentation">
+            <summary>
+            UrlPresentation.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Report.UrlVideo">
+            <summary>
+            UrlVideo.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Report.Review">
+            <summary>
+            Review.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Report.Book">
+            <summary>
+            Report.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Report.Speaker">
+            <summary>
+            Report.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Report.ClubMeeting">
+            <summary>
+            мастеровая ссылка на шапку IIS.Product_64396.ClubMeeting.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_64396.Report.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.Report.Views.ReportE">
+            <summary>
+            "ReportE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_64396.DetailArrayOfReport">
+            <summary>
+            Detail array of Report.
+            </summary>
+        </member>
+        <member name="M:IIS.Product_64396.DetailArrayOfReport.#ctor(IIS.Product_64396.ClubMeeting)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type Report by index.
+            </summary>
+            <summary>
+            Adds object with type Report.
+            </summary>
+        </member>
+    </members>
+</doc>

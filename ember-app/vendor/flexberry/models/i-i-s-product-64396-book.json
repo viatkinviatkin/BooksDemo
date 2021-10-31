@@ -1,0 +1,180 @@
+﻿{
+  "name": "IISProduct_64396Book",
+  "modelName": "i-i-s-product-64396-book",
+  "className": "Book",
+  "nameSpace": "IIS.Product_64396",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "title",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "author",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "pagesCount",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "urlCover",
+      "type": "file",
+      "flexberryType": "WebFile",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "urlDescription",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "tags",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "averageRating",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": false,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "BookE",
+      "modelName": "i-i-s-product-64396-book",
+      "attrs": [
+        {
+          "name": "title",
+          "caption": "Title",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "author",
+          "caption": "Author",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "pagesCount",
+          "caption": "Pages count",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "urlCover",
+          "caption": "Url cover",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "urlDescription",
+          "caption": "Url description",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "tags",
+          "caption": "Tags",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "averageRating",
+          "caption": "Average rating",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "BookL",
+      "modelName": "i-i-s-product-64396-book",
+      "attrs": [
+        {
+          "name": "title",
+          "caption": "Title",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "author",
+          "caption": "Author",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "pagesCount",
+          "caption": "Pages count",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "urlCover",
+          "caption": "Url cover",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "urlDescription",
+          "caption": "Url description",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "tags",
+          "caption": "Tags",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "averageRating",
+          "caption": "Average rating",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

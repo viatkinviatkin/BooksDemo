@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Speaker",
+  "name": "IISProduct_64396SpeakerE",
+  "className": "SpeakerE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-product-64396-speaker",
+      "modelProjection": "SpeakerE"
+    }
+  ]
+}

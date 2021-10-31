@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "book",
+      "displayAttributeName": "title",
+      "required": true,
+      "relationName": "Report.Book",
+      "projection": "BookL",
+      "detailModelName": "i-i-s-product-64396-report"
+    },
+    {
+      "master": "speaker",
+      "displayAttributeName": "lastName",
+      "required": true,
+      "relationName": "Report.Speaker",
+      "projection": "SpeakerL",
+      "detailModelName": "i-i-s-product-64396-report"
+    }
+  ],
+  "external": false,
+  "caption": "Club meeting",
+  "name": "IISProduct_64396ClubMeetingE",
+  "className": "ClubMeetingE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-product-64396-club-meeting",
+      "modelProjection": "ClubMeetingE"
+    }
+  ]
+}

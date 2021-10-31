@@ -1,0 +1,43 @@
+﻿{
+  "applicationCaption": "Product_64396",
+  "applicationTitle": "Product_64396",
+  "items": [
+    {
+      "link": null,
+      "menuName": "product-64396",
+      "caption": "Product_64396",
+      "title": "Product_64396",
+      "children": [
+        {
+          "link": "i-i-s-product-64396-book-l",
+          "menuName": null,
+          "caption": "Book",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-product-64396-club-meeting-l",
+          "menuName": null,
+          "caption": "Club meeting",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-product-64396-bt-book-l",
+          "menuName": null,
+          "caption": "Bt book",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-product-64396-speaker-l",
+          "menuName": null,
+          "caption": "Speaker",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

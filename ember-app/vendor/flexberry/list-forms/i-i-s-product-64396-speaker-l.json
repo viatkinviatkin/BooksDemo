@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-product-64396-speaker-e",
+  "editForm": "i-i-s-product-64396-speaker-e",
+  "external": false,
+  "caption": "Speaker",
+  "name": "IISProduct_64396SpeakerL",
+  "className": "SpeakerL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-product-64396-speaker",
+      "modelProjection": "SpeakerL"
+    }
+  ]
+}

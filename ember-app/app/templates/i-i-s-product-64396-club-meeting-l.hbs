@@ -1,0 +1,87 @@
+{{flexberry-error error=error}}  
+<div class="ui three column grid stackable">
+
+<div class="col">
+
+    {{flexberry-field
+  value=bookValue
+  label=label
+  placeholder='Book filter'
+  readonly=readonly
+  type=type
+  maxlength=maxlength 
+}}  
+  </div>
+  <div class="col">
+ 
+    {{flexberry-field
+  value=speakerValue
+  label=label
+  placeholder='Speaker filter'
+  readonly=readonly
+  type=type
+  maxlength=maxlength 
+}}  
+  </div>
+ <div class="col">
+{{flexberry-button
+  caption='Apply filer'
+  class= 'top attached'
+  iconClass=class
+  tooltip=tooltip
+  readonly=readonly
+  click=(action "onButtonClick")
+}}
+  </div>
+  <div class="col">
+    {{flexberry-dropdown
+  items=(flexberry-enum "model.btBook")
+  value=model.btBook
+  placeholder='choose book'
+    }}
+  </div>
+  <div class="col">
+  {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.btBook
+      relationName="btBook"
+      projection="BtBookE"
+      readonly=readonly
+      componentName="bookLookUp"
+      displayAttributeName = "book.title"
+      placeholder = "choose book"
+    }}
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<h3>{{t "forms.i-i-s-product-64396-club-meeting-l.caption"}}</h3>
+<div class="row">
+  {{flexberry-objectlistview
+    modelName=modelName
+    modelProjection=modelProjection
+    editFormRoute=editFormRoute
+    content=model
+    createNewButton=true
+    refreshButton=true
+    sorting=computedSorting
+    orderable=true
+    showCheckBoxInRow=true
+    sortByColumn=(action "sortByColumn")
+    addColumnToSorting=(action "addColumnToSorting")
+    beforeDeleteAllRecords=(action "beforeDeleteAllRecords")
+    pages=pages
+    perPageValue=perPageValue
+    perPageValues=perPageValues
+    recordsTotalCount=recordsTotalCount
+    hasPreviousPage=hasPreviousPage
+    hasNextPage=hasNextPage
+    previousPage=(action "previousPage")
+    gotoPage=(action "gotoPage")
+    nextPage=(action "nextPage")
+    componentName="IISProduct_64396ClubMeetingL"
+  }}
+</div>

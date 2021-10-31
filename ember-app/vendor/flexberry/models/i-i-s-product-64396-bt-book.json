@@ -1,0 +1,118 @@
+﻿{
+  "name": "IISProduct_64396BtBook",
+  "modelName": "i-i-s-product-64396-bt-book",
+  "className": "BtBook",
+  "nameSpace": "IIS.Product_64396",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "book",
+      "relatedTo": "i-i-s-product-64396-book",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "BtBookE",
+      "modelName": "i-i-s-product-64396-bt-book",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Title",
+          "lookupValueField": "title",
+          "relationName": "Book",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "title",
+              "caption": "Title",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Book",
+          "name": "book",
+          "relatedTo": "i-i-s-product-64396-book",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "BtBookL",
+      "modelName": "i-i-s-product-64396-bt-book",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Book",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "title",
+              "caption": "Title",
+              "hidden": false,
+              "index": 0
+            },
+            {
+              "name": "author",
+              "caption": "Author",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "pagesCount",
+              "caption": "Pages",
+              "hidden": false,
+              "index": 2
+            },
+            {
+              "name": "urlCover",
+              "caption": "UrlCover",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "urlDescription",
+              "caption": "UrlDescription",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "tags",
+              "caption": "UrlTags",
+              "hidden": false,
+              "index": 5
+            },
+            {
+              "name": "averageRating",
+              "caption": "AverageRating",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Title",
+          "name": "book",
+          "relatedTo": "i-i-s-product-64396-book",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

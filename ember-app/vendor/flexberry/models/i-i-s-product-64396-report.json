@@ -1,0 +1,165 @@
+﻿{
+  "name": "IISProduct_64396Report",
+  "modelName": "i-i-s-product-64396-report",
+  "className": "Report",
+  "nameSpace": "IIS.Product_64396",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "reportDate",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "bookRating",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "urlPresentation",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "urlVideo",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "review",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "book",
+      "relatedTo": "i-i-s-product-64396-book",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "speaker",
+      "relatedTo": "i-i-s-product-64396-speaker",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "clubMeeting",
+      "relatedTo": "i-i-s-product-64396-club-meeting",
+      "inverse": "report"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ReportE",
+      "modelName": "i-i-s-product-64396-report",
+      "attrs": [
+        {
+          "name": "reportDate",
+          "caption": "Report date",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "bookRating",
+          "caption": "Book rating",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "urlPresentation",
+          "caption": "Url presentation",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "urlVideo",
+          "caption": "Url video",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "review",
+          "caption": "Review",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Title",
+          "lookupValueField": "title",
+          "relationName": "Book",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "title",
+              "caption": "Title",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Book",
+          "name": "book",
+          "relatedTo": "i-i-s-product-64396-book",
+          "inverse": null
+        },
+        {
+          "lookupValue": "LastName",
+          "lookupValueField": "lastName",
+          "relationName": "Speaker",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "lastName",
+              "caption": "Last name",
+              "hidden": true,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "standard",
+          "caption": "Speaker",
+          "name": "speaker",
+          "relatedTo": "i-i-s-product-64396-speaker",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
