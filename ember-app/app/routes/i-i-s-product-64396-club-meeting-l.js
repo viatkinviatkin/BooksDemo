@@ -2,6 +2,7 @@ import ListFormRoute from 'ember-flexberry/routes/list-form';
 import { computed } from '@ember/object';
 import { StringPredicate,DatePredicate} from 'ember-flexberry-data/query/predicate';
 import FilterOperator  from 'ember-flexberry-data/query/filter-operator'; 
+
 export default ListFormRoute.extend({
   /**
     Name of model projection to be used as record's properties limitation.
@@ -80,6 +81,16 @@ export default ListFormRoute.extend({
        }
        return undefined;
      }},
+     
+  onModelLoadingFulfilled(model ,transition){
+
+    this.store.findAll('i-i-s-product-64396-bt-book') 
+    .then(function(books) {
+     model.set('booksForLookup',books)
+     console.log('догрузка модели', model)
+    
+    });
+  },
     routeMethod(){
       console.log('достучался до метода роута!')
     }

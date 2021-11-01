@@ -1,7 +1,7 @@
 {{flexberry-error error=error}}  
 <div class="ui three column grid stackable">
 
-<div class="col">
+{{!-- <div class="col">
 
     {{flexberry-field
   value=bookValue
@@ -22,36 +22,43 @@
   type=type
   maxlength=maxlength 
 }}  
-  </div>
- <div class="col">
-{{flexberry-button
-  caption='Apply filer'
-  class= 'top attached'
-  iconClass=class
-  tooltip=tooltip
-  readonly=readonly
-  click=(action "onButtonClick")
-}}
-  </div>
+  </div> --}}
+ 
   <div class="col">
-    {{flexberry-dropdown
-  items=(flexberry-enum "model.btBook")
-  value=model.btBook
-  placeholder='choose book'
+  {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=bookValue
+      relationName="btBook"
+      projection="BtBookL"
+      readonly=readonly
+      componentName="bookLookUp"
+      displayAttributeName = "title"
+      placeholder = "Book filter"
     }}
   </div>
   <div class="col">
   {{flexberry-lookup
       choose="showLookupDialog"
       remove="removeLookupValue"
-      value=model.btBook
+      value=speakerValue
       relationName="btBook"
-      projection="BtBookE"
+      projection="BtBookL"
       readonly=readonly
-      componentName="bookLookUp"
-      displayAttributeName = "book.title"
-      placeholder = "choose book"
+      componentName="speakerLookUp"
+      displayAttributeName = "LastName"
+      placeholder = "Speaker filter"
     }}
+  </div>
+  <div class="col">
+   {{flexberry-button
+     caption='Apply filer'
+     class= 'top attached'
+     iconClass=class
+     tooltip=tooltip
+     readonly=readonly
+     click=(action "onButtonClick")
+   }}
   </div>
 </div>
 <br>
