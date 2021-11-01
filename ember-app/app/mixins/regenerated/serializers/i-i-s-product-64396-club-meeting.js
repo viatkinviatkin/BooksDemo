@@ -6,6 +6,7 @@ export let Serializer = Mixin.create({
     let parentAttrs = this._super();
     let attrs = {
       btBook: { serialize: 'odata-id', deserialize: 'records' },
+      btSpeaker: { serialize: 'odata-id', deserialize: 'records' },
       report: { serialize: false, deserialize: 'records' }
     };
 

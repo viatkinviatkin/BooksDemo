@@ -23,6 +23,13 @@
       "name": "btBook",
       "relatedTo": "i-i-s-product-64396-bt-book",
       "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "btSpeaker",
+      "relatedTo": "i-i-s-product-64396-bt-speaker",
+      "inverse": null
     }
   ],
   "hasMany": [
@@ -79,6 +86,20 @@
           "caption": "Choose book for filter",
           "name": "btBook",
           "relatedTo": "i-i-s-product-64396-bt-book",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "BtSpeaker",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 2,
+          "type": "default",
+          "caption": "Choose speaker for filter",
+          "name": "btSpeaker",
+          "relatedTo": "i-i-s-product-64396-bt-speaker",
           "inverse": null
         }
       ],

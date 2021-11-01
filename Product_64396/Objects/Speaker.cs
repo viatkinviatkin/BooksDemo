@@ -12,6 +12,7 @@ namespace IIS.Product_64396
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET.Business;
     using ICSSoft.STORMNET;
     
     
@@ -26,6 +27,7 @@ namespace IIS.Product_64396
     // *** Start programmer edit section *** (Speaker CustomAttributes)
 
     // *** End programmer edit section *** (Speaker CustomAttributes)
+    [BusinessServer("IIS.Product_64396.SpeakerBS, Product_64396.BusinessServers", ICSSoft.STORMNET.Business.DataServiceObjectEvents.OnAllEvents)]
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("SpeakerE", new string[] {

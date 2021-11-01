@@ -46,6 +46,5 @@ C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\O
 C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\Objects\bin\Debug\NewPlatform.Flexberry.ORM.UnityFactory.xml
 C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\Objects\obj\Debug\Product_64396.Objects.csproj.AssemblyReference.cache
 C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\Objects\obj\Debug\Product_64396.Objects.csproj.CoreCompileInputs.cache
-C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\Objects\obj\Debug\Product_64396.Objects.csproj.CopyComplete
 C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\Objects\obj\Debug\Product_64396.Objects.dll
 C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\Objects\obj\Debug\Product_64396.Objects.pdb

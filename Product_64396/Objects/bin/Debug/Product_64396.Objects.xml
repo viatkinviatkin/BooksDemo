@@ -74,6 +74,11 @@
             Club meeting.
             </summary>
         </member>
+        <member name="P:IIS.Product_64396.ClubMeeting.BtSpeaker">
+            <summary>
+            Club meeting.
+            </summary>
+        </member>
         <member name="P:IIS.Product_64396.ClubMeeting.Report">
             <summary>
             Club meeting.
@@ -223,6 +228,31 @@
             </summary>
             <summary>
             Adds object with type Report.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_64396.BtSpeaker">
+            <summary>
+            BtSpeaker.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.BtSpeaker.Speaker">
+            <summary>
+            BtSpeaker.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_64396.BtSpeaker.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.BtSpeaker.Views.BtSpeakerE">
+            <summary>
+            "BtSpeakerE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_64396.BtSpeaker.Views.BtSpeakerL">
+            <summary>
+            "BtSpeakerL" view.
             </summary>
         </member>
     </members>

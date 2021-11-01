@@ -42,6 +42,9 @@ export default {
       btBook: {
         __caption__: 'Choose book for filter'
       },
+      btSpeaker: {
+        __caption__: 'Choose speaker for filter'
+      },
       report: {
         __caption__: '',
         reportDate: {
@@ -80,6 +83,9 @@ export default {
     },
     btBook: {
       __caption__: 'Choose book for filter'
+    },
+    btSpeaker: {
+      __caption__: 'Choose speaker for filter'
     },
     report: {
       __caption__: 'Report'

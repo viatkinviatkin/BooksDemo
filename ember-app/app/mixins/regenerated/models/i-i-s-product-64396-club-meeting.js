@@ -7,6 +7,7 @@ import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes'
 export let Model = Mixin.create({
   meetingDate: DS.attr('date'),
   btBook: DS.belongsTo('i-i-s-product-64396-bt-book', { inverse: null, async: false }),
+  btSpeaker: DS.belongsTo('i-i-s-product-64396-bt-speaker', { inverse: null, async: false }),
   report: DS.hasMany('i-i-s-product-64396-report', { inverse: 'clubMeeting', async: false })
 });
 
@@ -20,6 +21,12 @@ export let ValidationRules = {
   },
   btBook: {
     descriptionKey: 'models.i-i-s-product-64396-club-meeting.validations.btBook.__caption__',
+    validators: [
+      validator('ds-error'),
+    ],
+  },
+  btSpeaker: {
+    descriptionKey: 'models.i-i-s-product-64396-club-meeting.validations.btSpeaker.__caption__',
     validators: [
       validator('ds-error'),
     ],
@@ -56,6 +63,9 @@ export let defineProjections = function (modelClass) {
     btBook: belongsTo('i-i-s-product-64396-bt-book', 'Choose book for filter', {
 
     }, { index: 0, hidden: true }),
+    btSpeaker: belongsTo('i-i-s-product-64396-bt-speaker', 'Choose speaker for filter', {
+
+    }, { index: 2, hidden: false }),
     report: hasMany('i-i-s-product-64396-report', '', {
       reportDate: attr('Report date', { index: 0 }),
       bookRating: attr('Book rating', { index: 1 }),

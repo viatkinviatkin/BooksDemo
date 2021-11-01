@@ -52,14 +52,14 @@ export default ListFormController.extend(Evented,
 
       if(textFieldBookValue&&textFieldSpeakerValue){
         let sp1 = new SimplePredicate('book.title', FilterOperator.Eq, textFieldBookValue.title);
-        let sp2 = new SimplePredicate('speaker.lastName', FilterOperator.Eq, textFieldSpeakerValue.title);
+        let sp2 = new SimplePredicate('speaker.lastName', FilterOperator.Eq, textFieldSpeakerValue.lastName);
         let cp = new ComplexPredicate(Condition.And, sp1, sp2);
         filterPredicate = new DetailPredicate('report').all(cp)
       }
       else if(textFieldBookValue)
         filterPredicate =  new DetailPredicate('report').all('book.title', FilterOperator.Eq, textFieldBookValue.title)
       else if(textFieldSpeakerValue)
-        filterPredicate = new DetailPredicate('report').all('speaker.lastName', FilterOperator.Eq, textFieldSpeakerValue.title)
+        filterPredicate = new DetailPredicate('report').all('speaker.lastName', FilterOperator.Eq, textFieldSpeakerValue.lastName)
      
        
       
@@ -84,7 +84,21 @@ export default ListFormController.extend(Evented,
           break;
 
       }
+    },
+    removeLookupValue(arg){
+      switch(arg.relationName){
+        case 'btBook':
+          this.set('bookValue', undefined)
+          break;
+        case 'btSpeaker':
+          this.set('speakerValue',undefined)
+          break;
+
+      }
+      this.send('onButtonClick')
+      
     }
+
 
   },
 

@@ -1,0 +1,87 @@
+﻿{
+  "name": "IISProduct_64396BtSpeaker",
+  "modelName": "i-i-s-product-64396-bt-speaker",
+  "className": "BtSpeaker",
+  "nameSpace": "IIS.Product_64396",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "speaker",
+      "relatedTo": "i-i-s-product-64396-speaker",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "BtSpeakerE",
+      "modelName": "i-i-s-product-64396-bt-speaker",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Speaker",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 0,
+          "type": "default",
+          "caption": "",
+          "name": "speaker",
+          "relatedTo": "i-i-s-product-64396-speaker",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "BtSpeakerL",
+      "modelName": "i-i-s-product-64396-bt-speaker",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Speaker",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "lastName",
+              "caption": "LastName",
+              "hidden": false,
+              "index": 0
+            },
+            {
+              "name": "firstName",
+              "caption": "FirstName",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "middleName",
+              "caption": "MiddleName",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "LastName",
+          "name": "speaker",
+          "relatedTo": "i-i-s-product-64396-speaker",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

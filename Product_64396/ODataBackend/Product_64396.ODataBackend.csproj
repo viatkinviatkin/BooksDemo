@@ -216,6 +216,10 @@
       <Project>{5fed2090-4113-49f0-b3de-e50b314b496d}</Project>
       <Name>Product_64396.Objects</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BusinessServers\Product_64396.BusinessServers.csproj">
+      <Project>{ce49f94f-6304-4566-8f77-f5fb2bccbeb8}</Project>
+      <Name>Product_64396.BusinessServers</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

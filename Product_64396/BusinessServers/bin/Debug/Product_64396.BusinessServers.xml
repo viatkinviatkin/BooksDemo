@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Product_64396.BusinessServers</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.Product_64396.BookBS">
+            <summary>
+            BookBS.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_64396.SpeakerBS">
+            <summary>
+            SpeakerBS.
+            </summary>
+        </member>
+    </members>
+</doc>

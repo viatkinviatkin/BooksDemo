@@ -95,6 +95,9 @@ C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\O
 C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\ODataBackend\bin\Unity.AspNet.WebApi.xml
 C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\ODataBackend\obj\Debug\Product_64396.ODataBackend.csproj.AssemblyReference.cache
 C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\ODataBackend\obj\Debug\Product_64396.ODataBackend.csproj.CoreCompileInputs.cache
-C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\ODataBackend\obj\Debug\Product_64396.ODataBackend.csproj.CopyComplete
 C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\ODataBackend\obj\Debug\Product_64396.ODataBackend.dll
 C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\ODataBackend\obj\Debug\Product_64396.ODataBackend.pdb
+C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\ODataBackend\bin\Product_64396.BusinessServers.dll
+C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\ODataBackend\bin\Product_64396.BusinessServers.pdb
+C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\ODataBackend\bin\Product_64396.BusinessServers.xml
+C:\Users\viatkinviatkin\Desktop\books-demo\CodeGen\Product_64396\Product_64396\ODataBackend\obj\Debug\Product_64396.ODataBackend.csproj.CopyComplete

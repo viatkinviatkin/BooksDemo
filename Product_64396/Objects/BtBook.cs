@@ -35,7 +35,13 @@ namespace IIS.Product_64396
             "Book.Title"})]
     [MasterViewDefineAttribute("BtBookE", "Book", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Title")]
     [View("BtBookL", new string[] {
-            "Book.Title as \'Title\'"})]
+            "Book.Title as \'Title\'",
+            "Book.Author as \'Author\'",
+            "Book.PagesCount as \'Pages\'",
+            "Book.UrlCover as \'UrlCover\'",
+            "Book.UrlDescription as \'UrlDescription\'",
+            "Book.Tags as \'UrlTags\'",
+            "Book.AverageRating as \'AverageRating\'"})]
     public class BtBook : ICSSoft.STORMNET.DataObject
     {
         

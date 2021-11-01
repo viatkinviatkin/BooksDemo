@@ -35,8 +35,10 @@ namespace IIS.Product_64396
             ""})]
     [View("ClubMeetingL", new string[] {
             "BtBook as \'Choose book for filter\'",
-            "MeetingDate as \'Meeting date\'"}, Hidden=new string[] {
-            "BtBook"})]
+            "MeetingDate as \'Meeting date\'",
+            "BtSpeaker as \'Choose speaker for filter\'"}, Hidden=new string[] {
+            "BtBook",
+            "BtSpeaker"})]
     [AssociatedDetailViewAttribute("ClubMeetingL", "Report", "ReportE", false, "", "", false, new string[] {
             ""})]
     public class ClubMeeting : ICSSoft.STORMNET.DataObject
@@ -45,6 +47,8 @@ namespace IIS.Product_64396
         private System.DateTime fMeetingDate;
         
         private IIS.Product_64396.BtBook fBtBook;
+        
+        private IIS.Product_64396.BtSpeaker fBtSpeaker;
         
         private IIS.Product_64396.DetailArrayOfReport fReport;
         
@@ -114,6 +118,39 @@ namespace IIS.Product_64396
                 // *** Start programmer edit section *** (ClubMeeting.BtBook Set end)
 
                 // *** End programmer edit section *** (ClubMeeting.BtBook Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Club meeting.
+        /// </summary>
+        // *** Start programmer edit section *** (ClubMeeting.BtSpeaker CustomAttributes)
+
+        // *** End programmer edit section *** (ClubMeeting.BtSpeaker CustomAttributes)
+        [PropertyStorage(new string[] {
+                "BtSpeaker"})]
+        public virtual IIS.Product_64396.BtSpeaker BtSpeaker
+        {
+            get
+            {
+                // *** Start programmer edit section *** (ClubMeeting.BtSpeaker Get start)
+
+                // *** End programmer edit section *** (ClubMeeting.BtSpeaker Get start)
+                IIS.Product_64396.BtSpeaker result = this.fBtSpeaker;
+                // *** Start programmer edit section *** (ClubMeeting.BtSpeaker Get end)
+
+                // *** End programmer edit section *** (ClubMeeting.BtSpeaker Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (ClubMeeting.BtSpeaker Set start)
+
+                // *** End programmer edit section *** (ClubMeeting.BtSpeaker Set start)
+                this.fBtSpeaker = value;
+                // *** Start programmer edit section *** (ClubMeeting.BtSpeaker Set end)
+
+                // *** End programmer edit section *** (ClubMeeting.BtSpeaker Set end)
             }
         }
         

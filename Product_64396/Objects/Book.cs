@@ -12,6 +12,7 @@ namespace IIS.Product_64396
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET.Business;
     using ICSSoft.STORMNET;
     
     
@@ -26,6 +27,7 @@ namespace IIS.Product_64396
     // *** Start programmer edit section *** (Book CustomAttributes)
 
     // *** End programmer edit section *** (Book CustomAttributes)
+    [BusinessServer("IIS.Product_64396.BookBS, Product_64396.BusinessServers", ICSSoft.STORMNET.Business.DataServiceObjectEvents.OnAllEvents)]
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("BookE", new string[] {
@@ -266,7 +268,6 @@ namespace IIS.Product_64396
             get
             {
                 // *** Start programmer edit section *** (Book.AverageRating Get)
-
                 return 0;
                 // *** End programmer edit section *** (Book.AverageRating Get)
             }

@@ -42,6 +42,9 @@ export default {
       btBook: {
         __caption__: 'btBook'
       },
+      btSpeaker: {
+        __caption__: 'btSpeaker'
+      },
       report: {
         __caption__: 'report',
         reportDate: {
@@ -80,6 +83,9 @@ export default {
     },
     btBook: {
       __caption__: 'btBook'
+    },
+    btSpeaker: {
+      __caption__: 'btSpeaker'
     },
     report: {
       __caption__: 'report'

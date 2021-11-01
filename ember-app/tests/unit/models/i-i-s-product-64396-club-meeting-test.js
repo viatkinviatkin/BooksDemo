@@ -5,6 +5,7 @@ moduleForModel('i-i-s-product-64396-club-meeting', 'Unit | Model | i-i-s-product
   needs: [
     'model:i-i-s-product-64396-book',
     'model:i-i-s-product-64396-bt-book',
+    'model:i-i-s-product-64396-bt-speaker',
     'model:i-i-s-product-64396-club-meeting',
     'model:i-i-s-product-64396-report',
     'model:i-i-s-product-64396-speaker',
